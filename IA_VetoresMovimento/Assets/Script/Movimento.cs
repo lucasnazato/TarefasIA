@@ -33,9 +33,10 @@ public class Movimento : MonoBehaviour
         Vector3 dir = (points[alvoIndex].transform.position - transform.position);
         dir = new Vector3(dir.x, 0, dir.z);
 
-        // Verificar se o personagem já atingiu uma distância aceitável do alvo, se não, adicionar força na direção dele
+        // Verificar se o personagem já atingiu uma distância aceitável do alvo, se não, adicionar força na direção dele e virar para o alvo
         if (dir.magnitude > minDistance)
         {
+            transform.LookAt(new Vector3(points[alvoIndex].transform.position.x, transform.position.y, points[alvoIndex].transform.position.z));
             rb.AddForce(dir.normalized * Force * Time.deltaTime);
         }
     }
