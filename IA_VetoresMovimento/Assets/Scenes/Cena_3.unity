@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 503283982675330300, guid: a6718ce3f1d0e4446b43d02cb7906577, type: 3}
       propertyPath: minDistance
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 503283982675330300, guid: a6718ce3f1d0e4446b43d02cb7906577, type: 3}
       propertyPath: points.Array.size
@@ -581,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 503283982675330300, guid: a6718ce3f1d0e4446b43d02cb7906577, type: 3}
       propertyPath: minDistance
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 503283982675330300, guid: a6718ce3f1d0e4446b43d02cb7906577, type: 3}
       propertyPath: points.Array.size
