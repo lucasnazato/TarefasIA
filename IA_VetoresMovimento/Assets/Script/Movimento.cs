@@ -33,6 +33,8 @@ public class Movimento : MonoBehaviour
         Vector3 dir = (points[alvoIndex].transform.position - transform.position);
         dir = new Vector3(dir.x, 0, dir.z);
 
+        Vector3 targetPosition = new Vector3(points[alvoIndex].transform.position.x, transform.position.y, points[alvoIndex].transform.position.z);
+
         // Verificar se o personagem já atingiu uma distância aceitável do alvo, se não, adicionar força na direção dele e virar para o alvo
         if (dir.magnitude > minDistance)
         {
