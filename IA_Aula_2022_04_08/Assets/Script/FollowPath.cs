@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class FollowPath : MonoBehaviour
 {
+    // Variavel que define a transform do objetivo de movimentação
     Transform goal;
+
+    // Variaveis de movimentação do tanque 
     public float speed = 5.0f;
     public float accuracy = 0.05f;
     public float rotSpeed = 0.2f;
+
+    // Variaveis relacionadas aos waypoints e ao graph que irá definir o movimento do tanque
     public GameObject wpManager;
     GameObject[] wps;
     GameObject currentNode;

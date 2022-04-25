@@ -4,7 +4,7 @@ using UnityEngine;
 
 [System.Serializable]
 
-// Criar struct para conter toadas as variaveis dos Links (conexões)
+// Criar struct para conter todas as variaveis dos Links (conexões)
 public struct Link
 {
     public enum direction { UNI, BI }   // Enum para definir direção do link
